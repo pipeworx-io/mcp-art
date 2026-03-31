@@ -1,12 +1,3 @@
-/**
- * Art MCP — Metropolitan Museum of Art Collection API (free, no auth)
- *
- * Tools:
- * - search_artworks: search the collection and return details for the first 5 results
- * - get_artwork: full details for a single artwork by object ID
- * - get_departments: list all museum departments
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -21,6 +12,16 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Art MCP — Metropolitan Museum of Art Collection API (free, no auth)
+ *
+ * Tools:
+ * - search_artworks: search the collection and return details for the first 5 results
+ * - get_artwork: full details for a single artwork by object ID
+ * - get_departments: list all museum departments
+ */
+
 
 const BASE_URL = 'https://collectionapi.metmuseum.org/public/collection/v1';
 

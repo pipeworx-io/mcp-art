@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/art",
+  "title": "art",
+  "description": "Art MCP — Metropolitan Museum of Art Collection API (free, no auth)",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/art",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-art",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@pipeworx/mcp-art",
+      "version": "0.1.0"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/art/mcp"
+    }
+  ]
+}

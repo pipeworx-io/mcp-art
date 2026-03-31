@@ -1,14 +1,14 @@
-# @pipeworx/mcp-art
+# mcp-art
 
-MCP server for art data from public museum APIs. Powered by the [Metropolitan Museum of Art Collection API](https://metmuseum.github.io/) (free, no auth required).
+Art MCP — Metropolitan Museum of Art Collection API (free, no auth)
+
+Part of the [Pipeworx](https://pipeworx.io) open MCP gateway.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search_artworks` | Search the Met collection by keyword (returns up to 5 results with details) |
-| `get_artwork` | Get full details for an artwork by object ID |
-| `get_departments` | List all museum departments |
+| `get_departments` | Get the list of all departments in the Metropolitan Museum of Art. |
 
 ## Quick Start
 
@@ -24,7 +24,7 @@ Add to your MCP client config:
 }
 ```
 
-Or run via CLI:
+Or use the CLI:
 
 ```bash
 npx pipeworx use art
