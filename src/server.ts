@@ -10,7 +10,7 @@ import pack from './index.js';
 
 
 const server = new Server(
-  { name: '@pipeworx/mcp-art', version: '0.1.3' },
+  { name: '@pipeworx/mcp-art', version: '0.1.4' },
   { capabilities: { tools: {} } },
 );
 
