@@ -1,0 +1,46 @@
+[
+  {
+    "name": "search_artworks",
+    "description": "Search the Met's collection by subject, artist or keyword (e.g., \"sunflowers\", \"monet\", \"ancient egypt\"). Artworks whose TITLE matches come first, then ones whose ARTIST or culture matches, then general full-text matches; each result says which via `matched_on`. Returns title, artist, date, medium and image URL.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query (e.g., \"sunflowers\", \"ancient egypt\", \"monet\")"
+        },
+        "limit": {
+          "type": "number",
+          "description": "How many artworks to return, 1-20 (default 5)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_artwork",
+    "description": "Get full details for a specific artwork. Provide the object ID from search results. Returns title, artist, date, medium, department, and high-resolution image URL.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "object_id": {
+          "type": "number",
+          "description": "Met Museum object ID (e.g., 436535)"
+        }
+      },
+      "required": [
+        "object_id"
+      ]
+    }
+  },
+  {
+    "name": "get_departments",
+    "description": "Return the full list of Metropolitan Museum of Art curatorial departments (e.g., 'Egyptian Art', 'Modern and Contemporary Art'), each with its numeric department ID.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
