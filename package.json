@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-art",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Art MCP — Metropolitan Museum of Art Collection API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "art",
     "gatewaySlug": "art",
-    "sourceHash": "v1-09dbf8e7839ccd9d516f9d01082e267ec455e974aa6a060a993b191ff259c9b7",
-    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
+    "sourceHash": "v1-85332e8e61ae4e3b95a38348f6d6ca39c7f6a29da3fb30fab009f44001829db9",
+    "sourceCommit": "5cb09714e895571153f3d9663c36ff0f140cadd6"
   }
 }
